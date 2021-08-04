@@ -1,0 +1,25 @@
+input {
+    width: 600px;
+}
+
+textarea {
+    height: 10em;
+    width: 600px;
+}
+
+style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+.message-chars-left {
+    width: 600px;
+    margin: auto;
+    text-align: left;
+}

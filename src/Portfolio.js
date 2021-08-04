@@ -2,7 +2,7 @@ import React from "react";
 import Gallery from 'react-grid-gallery';
 
 
-export default function Portfolio(){
+export default function Portfolio() {
     const IMAGES = [{
         src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
         thumbnail: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
@@ -26,19 +26,20 @@ export default function Portfolio(){
             thumbnailHeight: 212
         }]
 
-    return(
-         <div>
-             <div className='App'>
-             <h1>Gallery</h1>
-             <p>Eat My Shiny Metal Ass</p>
-                </div>
-             <div style={{
-                 // display: 'flex', // This is causing pictures to disappear
-                 justifyContent: 'center',
-                 alignItems: 'center'}}
-             >
-             <Gallery images={IMAGES} enableImageSelection={false} margin={0}/>
-             </div>
+    return (
+        <div>
+            <div className='App'>
+                <h1>Gallery</h1>
+                <p>Eat My Shiny Metal Ass</p>
+            </div>
+            <div style={{
+                // display: 'flex', // This is causing pictures to disappear
+                justifyContent: 'center',
+                alignItems: 'center'
+            }}
+            >
+                <Gallery images={IMAGES} enableImageSelection={false} margin={0}/>
+            </div>
         </div>
 
     );

@@ -1,23 +1,15 @@
 import React from "react";
-import {
-    Nav,
-    NavLogo,
-    NavLink,
-    Bars,
-    NavMenu,
-    NavBtn,
-    NavBtnLink,
-} from "./NavbarElements";
+import {Bars, Nav, NavLink, NavLogo, NavMenu,} from "./NavbarElements";
 
 export default function Header() {
 
-    return(
+    return (
         <>
             <Nav>
                 <NavLogo to="/">
                     Logo
                 </NavLogo>
-                <Bars />
+                <Bars/>
 
                 <NavMenu>
                     <NavLink to="/" activeStyle>

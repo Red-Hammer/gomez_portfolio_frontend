@@ -3,6 +3,7 @@ import About from "./about";
 import Contact from "./contact";
 import Header from "./Header";
 import Portfolio from "./Portfolio";
+import Admin from "./Admin";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import './App.css';
 
@@ -16,6 +17,7 @@ function App() {
                 <Route path="/" exact component={Portfolio}/> //Currently the home page, will change later
                 <Route path="/about" component={About}/>
                 <Route path="/contact" component={Contact}/>
+                <Route path="/admin" component={Admin}/> // Move this behind a security wall
             </Switch>
         </Router>
 

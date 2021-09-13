@@ -21,6 +21,9 @@ export default function Header() {
                     <NavLink to="/contact" activeStyle>
                         Contact
                     </NavLink>
+                    <NavLink to="/admin" activeStyle>
+                        Admin
+                    </NavLink>
                 </NavMenu>
             </Nav>
         </>

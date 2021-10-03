@@ -11,7 +11,7 @@ export default function Portfolio() {
     const [images, setImages] = useState([]);
 
     useEffect(() => {
-        fetch('http://127.0.0.1:5000/api/photos') //TODO: Change this to the actual api route when productionized
+        fetch('http://127.0.0.1:5003/api/home-photos') //TODO: Change this to the actual api route when productionized
             .then(res => res.json())
             .then(
                 (result) => {

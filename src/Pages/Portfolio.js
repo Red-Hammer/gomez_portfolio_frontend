@@ -1,6 +1,7 @@
 import React, {useEffect} from "react";
 import Gallery from 'react-grid-gallery';
 import {useState} from "react";
+import './Portfolio.css'
 
 
 export default function Portfolio() {
@@ -34,13 +35,9 @@ export default function Portfolio() {
             <div>
                 <div className='App'>
                 </div>
-                <div style={{
-                    // display: 'flex', // This is causing pictures to disappear
-                    justifyContent: 'center',
-                    alignItems: 'center'
-                }}
-                >
-                    <Gallery images={images} enableImageSelection={false} margin={0}/>
+                <div className="title"><p>Yeet</p></div>
+                <div className="gallery">
+                    <Gallery images={images} enableImageSelection={false} margin={'auto'}/>
                 </div>
             </div>
 

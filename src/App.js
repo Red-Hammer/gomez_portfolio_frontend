@@ -7,20 +7,18 @@ import Admin from "./Pages/Admin";
 import Homepage from "./Pages/Home";
 import {BrowserRouter as Router, Route, Switch, Redirect} from "react-router-dom";
 import './App.css';
-import ProtectedRoute from "./ProtectedRoute";
 
 function App() {
-    const isAuthenticated = true;
 
     return (
         <Router>
-            <Header auth={isAuthenticated}/>
+            <Header/>
             <Switch>
                 <Route path="/" exact component={Homepage}/> //Currently the home page, will change later
                 <Route path="/portfolio" exact component={Portfolio}/>
                 <Route path="/about" component={About}/>
                 <Route path="/contact" component={Contact}/>
-                <ProtectedRoute path="/admin" component={Admin} auth={isAuthenticated}/> // Move this behind a security wall
+                <Route path="/admin" component={Admin}/> // Move this behind a security wall
             </Switch>
         </Router>
 

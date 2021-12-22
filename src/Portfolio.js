@@ -11,7 +11,7 @@ export default function Portfolio() {
     const [images, setImages] = useState([]);
 
     useEffect(() => {
-        fetch('http://127.0.0.1:5000/api/photos') //TODO: Change this to the actual api route when productionized
+        fetch('http://127.0.0.1:5003/api/gallery-photos') //TODO: Change this to the actual api route when productionized
             .then(res => res.json())
             .then(
                 (result) => {
@@ -33,8 +33,6 @@ export default function Portfolio() {
         return (
             <div>
                 <div className='App'>
-                    <h1>Gallery</h1>
-                    <p>Eat My Shiny Metal Ass</p>
                 </div>
                 <div style={{
                     // display: 'flex', // This is causing pictures to disappear

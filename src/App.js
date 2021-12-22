@@ -1,10 +1,10 @@
 import React from "react";
-import About from "./about";
-import Contact from "./contact";
+import About from "./Pages/about";
+import Contact from "./Pages/contact";
 import Header from "./Header";
-import Portfolio from "./Portfolio";
-import Admin from "./Admin";
-import Homepage from "./Home";
+import Portfolio from "./Pages/Portfolio";
+import Admin from "./Pages/Admin";
+import Homepage from "./Pages/Home";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import './App.css';
 

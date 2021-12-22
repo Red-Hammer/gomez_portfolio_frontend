@@ -14,7 +14,7 @@ function App() {
 
     return (
         <Router>
-            <Header/>
+            <Header auth={isAuthenticated}/>
             <Switch>
                 <Route path="/" exact component={Homepage}/> //Currently the home page, will change later
                 <Route path="/portfolio" exact component={Portfolio}/>

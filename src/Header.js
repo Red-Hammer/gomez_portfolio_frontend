@@ -1,6 +1,9 @@
 import React from "react";
 import {Bars, Nav, NavLink, NavLogo, NavMenu,} from "./NavbarElements";
 
+// Logo flush left
+// Nav flush right
+// Center "Gomez Adams"
 export default function Header(props) {
 
     return (

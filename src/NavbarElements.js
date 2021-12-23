@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
   background: black;
-  height: 85px;
+  height: 65px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,6 +16,7 @@ export const NavLogo = styled(Link)`
   color: #fff;
   font-size: 2rem;
   text-decoration: none;
+  margin-left: -300px;
 
 `;
 
@@ -23,6 +24,7 @@ export const NavLink = styled(Link)`
   color: #fff;
   display: flex;
   align-items: center;
+  justify-content: right;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
@@ -54,7 +56,7 @@ export const Bars = styled(FaBars)`
 export const NavMenu = styled.div`
   display: flex;
   align-items: center;
-  margin-right: -24px;
+  margin-right: -300px;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -75,9 +77,9 @@ export const NavBtnLink = styled(Link)`
   border-radius: 4px;
   background: transparent;
   padding: 10px 22px;
-  color: #fff;
+  color: #0c0c0c;
   outline: none;
-  border: 1px solid #fff;
+  border: 4px solid #181717;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;

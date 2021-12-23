@@ -1,11 +1,11 @@
 import React, {useEffect} from "react";
 import Gallery from 'react-grid-gallery';
 import {useState} from "react";
+import './Portfolio.css'
 
 
 export default function Portfolio() {
 
-    // Trying this with Hooks
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [images, setImages] = useState([]);
@@ -34,13 +34,9 @@ export default function Portfolio() {
             <div>
                 <div className='App'>
                 </div>
-                <div style={{
-                    // display: 'flex', // This is causing pictures to disappear
-                    justifyContent: 'center',
-                    alignItems: 'center'
-                }}
-                >
-                    <Gallery images={images} enableImageSelection={false} margin={0}/>
+                <div className="title"><p>Digital Portfolio</p></div>
+                <div className="gallery">
+                    <Gallery images={images} enableImageSelection={false} margin={25} rowHeight={350}/>
                 </div>
             </div>
 

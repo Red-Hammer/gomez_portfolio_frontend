@@ -1,6 +1,7 @@
 import React from "react";
 import {Bars, Nav, NavLink, NavLogo, NavMenu,} from "./NavbarElements";
 
+
 export default function Header() {
 
     return (
@@ -24,12 +25,10 @@ export default function Header() {
                     <NavLink to="/contact" activeStyle>
                         Contact
                     </NavLink>
-                    <NavLink to="/admin" activeStyle>
-                        Admin
-                    </NavLink>
                 </NavMenu>
             </Nav>
         </>
+
     );
 };
 

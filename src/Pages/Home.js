@@ -1,6 +1,7 @@
 import React, {useEffect} from "react";
 import Gallery from 'react-grid-gallery';
 import {useState} from "react";
+import "./Home.css"
 
 
 export default function Homepage() {
@@ -45,6 +46,7 @@ export default function Homepage() {
                 >
                     <Gallery images={images} enableImageSelection={false} margin={10} rowHeight={450} maxRows={1}/>
                 </div>
+                {/*<div className="home-footer" id="footer">Contact Me</div>*/}
             </div>
 
         );

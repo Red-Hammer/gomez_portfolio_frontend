@@ -36,7 +36,7 @@ export default function Portfolio() {
                 </div>
                 <div className="title"><p>Digital Portfolio</p></div>
                 <div className="gallery">
-                    <Gallery images={images} enableImageSelection={false} margin={25} rowHeight={375}/>
+                    <Gallery images={images} enableImageSelection={false} margin={25} rowHeight={350}/>
                 </div>
             </div>
 

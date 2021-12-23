@@ -6,7 +6,6 @@ import './Portfolio.css'
 
 export default function Portfolio() {
 
-    // Trying this with Hooks
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [images, setImages] = useState([]);
@@ -35,9 +34,9 @@ export default function Portfolio() {
             <div>
                 <div className='App'>
                 </div>
-                <div className="title"><p>Yeet</p></div>
+                <div className="title"><p>Digital Portfolio</p></div>
                 <div className="gallery">
-                    <Gallery images={images} enableImageSelection={false} margin={'auto'}/>
+                    <Gallery images={images} enableImageSelection={false} margin={25} rowHeight={375}/>
                 </div>
             </div>
 

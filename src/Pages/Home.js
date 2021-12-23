@@ -5,7 +5,6 @@ import {useState} from "react";
 
 export default function Homepage() {
 
-    // Trying this with Hooks
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [images, setImages] = useState([]);
@@ -38,14 +37,13 @@ export default function Homepage() {
                        </span>
                 </div>
                 <div style={{
-                    // display: 'flex', // This is causing pictures to disappear
                     justifyContent: 'center',
                     alignItems: 'center',
                     marginRight: '100px',
                     marginLeft: '100px'
                 }}
                 >
-                    <Gallery images={images} enableImageSelection={false} margin={0} rowHeight={500}/>
+                    <Gallery images={images} enableImageSelection={false} margin={10} rowHeight={450} maxRows={1}/>
                 </div>
             </div>
 

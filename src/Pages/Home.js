@@ -33,16 +33,19 @@ export default function Homepage() {
         return (
             <div>
                 <div className='App'>
-                    <h1>Gomez Adams</h1>
+                   <span style={{fontFamily: "Bookman"}}> <h1>Gomez Adams</h1>
                     <p>Welcome to my site!</p>
+                       </span>
                 </div>
                 <div style={{
                     // display: 'flex', // This is causing pictures to disappear
                     justifyContent: 'center',
-                    alignItems: 'center'
+                    alignItems: 'center',
+                    marginRight: '100px',
+                    marginLeft: '100px'
                 }}
                 >
-                    <Gallery images={images} enableImageSelection={false} margin={10} rowHeight={400}/>
+                    <Gallery images={images} enableImageSelection={false} margin={0} rowHeight={500}/>
                 </div>
             </div>
 

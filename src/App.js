@@ -3,9 +3,8 @@ import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Header from "./Header";
 import Portfolio from "./Pages/Portfolio";
-import Admin from "./Pages/Admin";
 import Homepage from "./Pages/Home";
-import {BrowserRouter as Router, Route, Switch, Redirect} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import './App.css';
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
                 <Route path="/portfolio" exact component={Portfolio}/>
                 <Route path="/about" component={About}/>
                 <Route path="/contact" component={Contact}/>
-                <Route path="/admin" component={Admin}/> // Move this behind a security wall
             </Switch>
         </Router>
 

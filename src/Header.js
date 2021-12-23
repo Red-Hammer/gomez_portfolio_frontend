@@ -4,7 +4,7 @@ import {Bars, Nav, NavLink, NavLogo, NavMenu,} from "./NavbarElements";
 // Logo flush left
 // Nav flush right
 // Center "Gomez Adams"
-export default function Header(props) {
+export default function Header() {
 
     return (
         <>
@@ -26,9 +26,6 @@ export default function Header(props) {
                     </NavLink>
                     <NavLink to="/contact" activeStyle>
                         Contact
-                    </NavLink>
-                    <NavLink to="/admin" activeStyle>
-                        Admin
                     </NavLink>
                 </NavMenu>
             </Nav>

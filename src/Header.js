@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from './Gomex_logo.webp'
 import {Bars, Nav, NavLink, NavLogo, NavMenu,} from "./NavbarElements";
 
 
@@ -8,7 +9,7 @@ export default function Header() {
         <>
             <Nav>
                 <NavLogo to="/">
-                    Logo
+                    <img src={Logo} height={52} width={90}/>
                 </NavLogo>
                 <Bars/>
 

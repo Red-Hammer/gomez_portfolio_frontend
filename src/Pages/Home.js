@@ -44,7 +44,7 @@ export default function Homepage() {
                     marginLeft: '100px'
                 }}
                 >
-                    <Gallery images={images} enableImageSelection={false} margin={10} rowHeight={450} maxRows={1}/>
+                    <Gallery images={images} enableImageSelection={false} margin={10} rowHeight={450}/>
                 </div>
                 {/*<div className="home-footer" id="footer">Contact Me</div>*/}
             </div>
